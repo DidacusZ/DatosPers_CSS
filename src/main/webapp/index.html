@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Datos Personales</title>
 <script src="script/script.js"></script>
-<link rel="stylesheet" href="assets/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="assets/style.css" type="text/css"
+	media="screen">
 
 <!-- Bootstrap -->
 <link
@@ -17,49 +18,46 @@
 </head>
 <body>
 
-<div class="container fluid">
+	<div class="container fluid">
 
 
-	<div class="row text-center">
-		<div class="col-12">
-		<h1>Datos Personales</h1>
-		</div>	
-	</div>	
-	
-	<div class="row text-center">
-		<div class="col-12">
-			<form>			
-				<label>Nombre:</label><input type="text" size="50" name="nombre" required/>
-				<br><br>
-				<label>Apellidos:</label><input type="text" size="50" name="apellidos" required/>
-				<br><br>
-				<label>Edad:</label><input type="number" size="50" name="edad" required/>
-				<br><br>
-				<label>DNI:</label><input type="text" size="50" name="dni" required/>
-				<br><br>
-				
-				<div class="col-6">
-					<input type="submit" name="Datos" onClick="GuardarDatos(this.form)"/>
+		<div class="row text-center">
+			<div class="col-12">
+				<h1>Datos Personales</h1>
+			</div>
+		</div>
+
+		<div class="row text-center">
+			<div class="col-12">
+				<form>
+					<label>Nombre:</label><input type="text" size="50" name="nombre"
+						required /> <br> <br> <label>Apellidos:</label><input
+						type="text" size="50" name="apellidos" required /> <br> <br>
+					<label>Edad:</label><input type="number" size="50" name="edad"
+						required /> <br> <br> <label>DNI:</label><input
+						type="text" size="50" name="dni" required /> <br> <br>
+
+					<div class="col-6">
+						<input type="submit" name="Datos"
+							onClick="GuardarDatos(this.form)" />
+					</div>
+
+				</form>
+			</div>
+
+			<div class="row">
+
+				<div class="col-6"></div>
+
+				<div class="col-6 botonConsultar">
+					<a href="mostrarDatos.html"><button>Consultar</button></a>
 				</div>
-									
-			</form>
-		</div>
-		
-		<div class="row">
-		
-			<div class="col-6">		
-				
-			</div>
-				
-			<div class="col-6 botonConsultar">
-				<a href="mostrarDatos.html"><button>Consultar</button></a>
-			</div>
-		
-		</div>
-			
-	</div>
 
-</div>		
+			</div>
+
+		</div>
+
+	</div>
 
 </body>
 </html>
