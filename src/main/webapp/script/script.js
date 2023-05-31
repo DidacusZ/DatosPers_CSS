@@ -20,6 +20,7 @@ function GuardarDatos(formulario) {
 
 	//guardamos objeto en memoria local/   con dni se guarda en memoria
 	// se almacena de manera mas eficiente en local y ocupa menos memoria
+	//lo serializa/codifica porque es mas de un campo lo mismo pasa en las listas,array...
 	localStorage.setItem(dni, JSON.stringify(usuario));//JSON.stringify: convierte objeto a cadena JSON
 
 	//localStorage.setItem("persona" + dni, usuario);
