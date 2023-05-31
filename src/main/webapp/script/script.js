@@ -19,6 +19,7 @@ function GuardarDatos(formulario) {
 	var usuario = new Usuario(dni, edad, apellidos, nombre);
 
 	//guardamos objeto en memoria local/   con dni se guarda en memoria
+	// se almacena de manera mas eficiente en local y ocupa menos memoria
 	localStorage.setItem(dni, JSON.stringify(usuario));//JSON.stringify: convierte objeto a cadena JSON
 
 	//localStorage.setItem("persona" + dni, usuario);
